@@ -27,7 +27,7 @@ for i in range(len(df_cod_risk)):
 
         # Check if the increase in regionfire is 35 or more
         increase = new_regionfire - old_regionfire
-        if increase >= 15 and new_entry.get('type', 0) == 0:
+        if increase >= 10 and new_entry.get('type', 0) == 0:
             # Append the data to the high_risk list
             high_risk.append(new_entry.to_dict())
 
